@@ -2,9 +2,19 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <title> </title>
+    <title> Formulario de prueba </title>
 </head>
 <body>
+	<?php 
+		if(isset($_POST['nombre']))
+
+		{
+			$nombre = $_POST['nombre'];
+			$edad = $_POST['edad'];
+			echo "Hola $nombre, tienes $edad años";
+		}
+       			
+	?>
 	<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 		<h1>Registro de usuario</h1>
 		Nombre : <input type=text name="nombre"><br>
@@ -21,12 +31,12 @@
 				<option value="otro">Otro</option>
 			</select><br>
 		Aficiones :
-			<input type=checkbox name="aficion1" value="Deporte">Hacer deporte &nbsp;
-			<input type=checkbox name="aficion2" value="Leer">Leer&nbsp;
+			<input type=checkbox name="aficion1" value="Deporte">Hacer deporte
+			<input type=checkbox name="aficion2" value="Leer">Leer
 			<input type=checkbox name="aficion3" value="Socializar">Socializar<br>
 		Comentarios :
-			<textarea rows="3" name="comentarios">Escriba aquí sus comentarios</textarea><br>
-			<input type="submit" value="Enviar">&nbsp;
+			<textarea rows="10" name="comentarios">Escriba aquí sus comentarios</textarea><br>
+			<input type="submit" value="Enviar">
 			<input type="reset" value="Nuevo">
 	</form>
 </body>
