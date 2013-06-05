@@ -1,0 +1,32 @@
+body
+{
+	/* fondo de la página web */
+	background: url(fondoMetalico.jpg) no-repeat  center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color : #FAF55A;
+    text-align: center;
+    font-family: arial;
+    font-size: 15px;
+}
+table 
+{
+	background: url(fondoRojo.jpg) no-repeat  center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+	border: solid 2px;
+	border-collapse: collapse;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+	
+}
+table td
+{
+	border: solid 1px;
+}
