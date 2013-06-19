@@ -1,0 +1,26 @@
+
+body
+{
+	background: url(fondo.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	color: #000;
+	font-family: arial;
+	font-size: 16px;
+	text-align: center;
+}
+
+
+table 
+{
+	border: solid 2px;
+	border-collapse: collapse;
+	margin: 0 auto;
+	text-align: center;
+}
+table td
+{
+	border: solid 1px;
+}

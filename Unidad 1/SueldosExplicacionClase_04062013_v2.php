@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>sueldos extras</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
@@ -43,6 +44,16 @@
 
 			$hhDoblesLunes = 0;
 			$hhTriplesLunes=0; 
+			$hhDoblesMartes = 0;
+			$hhTriplesMartes=0; 
+			$hhDoblesMiercoles = 0;
+			$hhTriplesMiercoles=0; 
+			$hhDoblesJueves = 0;
+			$hhTriplesJueves=0; 
+			$hhDoblesViernes = 0;
+			$hhTriplesviernes=0; 
+			$hhDoblesSabado = 0;
+			$hhTriplesSabado=0; 
 
 
 
@@ -52,23 +63,45 @@
 			$sueldoHora = $sueldoDiario / 8;
 
 			//cualcular horas extras dobles y tripples por dia de la semana
-			if ($hhLunes <= 8)
+			/* if ($hhLunes <= 8)
 			{
 				$hhDoblesLunes = $hhLunes;
 			}
 			if ($hhLunes > 8)
 			{
 				$hhDoblesLunes = 8;
-				$hhTriplesLunes = $hhLunes-8;
+				$hhTriplesLunes = $hhLunes-8;		
+			} */
 
+			if ($hhLunes <= 8)
+			{
+				$hhDoblesLunes = $hhLunes;
+			} 
+			else
+			{
+				$hhDoblesLunes = 8;
+				$hhTriplesLunes = $hhLunes-8;		
 			}
 
+			/* totales
+			$totalHorasDobles = $hhDoblesLunes + $hhDoblesMartes + $hhDoblesMiercoles .......
+			$totalHorasTriples = $hhTriplesLunes + $hhTriplesMartes + ...
+
+			$pagoHorasDobles = $totalHorasDobles * 2 * $sueldoHora;
+			$pagoHorasTriples = $totalHorasTriples * 3 * $sueldoHora;
+			*/
+ 
 
 			// Imprimo valores que respondi del formulario
+			echo "<br>horas extras dobles lunes: $hhDoblesLunes";
+			echo "<br>horas extras triples lunes: $hhTriplesLunes";
 			echo "<br>Trabajador: $nombre";
 			echo "<br>Sueldo semanal: $sueldoSemanal";
 			echo "<br>Sueldo diario: $sueldoDiario";
 			echo "<br>Sueldo por hora: $sueldoHora";
+			/* echo "<br>El total de horas dobles es $totalHorasDobles Monto : $pagoHorasDobles ";
+			echo "<br>El total de horas triples es $totalHorasTriples Monto : $pagoHorasTriples ";
+			*/
 		}
 	?>
 

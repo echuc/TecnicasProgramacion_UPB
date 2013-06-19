@@ -1,0 +1,7 @@
+control + ] 	comenta las líneas marcadas 
+alt + . 		cierra la tag actual
+control + p		Paleta de comandos
+control + r		Presenta @ y te lleva alos IDs que existan en la página y a las funciones (php y javascript)		
+contro+shift+r	Te lleva a todos los simbolos de todas las páginas abiertas
+control + d 	Selecciona la palabra y sigue seleccionando la palabra mientras se presione control+d (multiples cursores)
+alt+f3 			Selecciona todas las ocurrencias de la palabra seleccionada
