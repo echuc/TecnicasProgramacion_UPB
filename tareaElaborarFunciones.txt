@@ -1,0 +1,7 @@
+1. Escriba una función que dado dos números enteros a y b, realice la operación de potencia ab.
+2. Escriba una función que permita verificar si un número n es par o impar.
+3. Escriba una función que solicte el año y determine si el año es bisiesto o no
+4. Funcion que lea un numero decimal entre 1 y 2999 e imprima su equivalente en números romanos
+5. Escriber una funcion que lea el numero del día, numero del mes y numero del año y que imprima en pantalla P.E.15 de enero de 2013.
+6. Hacer una función que imprima la tabla de multiplicar que se señale
+ 
