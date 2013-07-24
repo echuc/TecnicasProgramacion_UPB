@@ -23,23 +23,30 @@ Descripción : Ordemiento con el método de Burbuja usando funciones
 		// Otra manera de hacer un vector
 		// $vector = array(20,9,8,7,25,17,2,13,1,3);
 
-		$tamano = sizeof($vector)-1;
+		$tamano = sizeof($vector)-1	;
 
-		// Imprimir el vector desordenado
+		// Imprime el vector desordenado
 		echo "<h1>Ordenamiento de burbuja</h1>";
-		echo "<h2>Vector original</h2>";
-		for ($i=0;$i<=$tamano;$i++) {
-			echo $vector[$i]."<br>";
-		}
+
+		// Imprime el vector desordenado
+		imprimeVector('Vector Orginal',$vector,$tamano);
 
 		// Llamar a la función de ordenamiento tipo burbuja
 		$vector = ordamientoBurbuja($vector,$tamano);
 
-		
-		echo "<h2>Vector ordenado</h2>";
-		for ($i=0;$i<=$tamano;$i++) {
-			echo $vector[$i]."<br>";
-		}	
+		// Imprimir el vector ordenado
+		imprimeVector('Vector Ordenado',$vector,$tamano);
+
+		// función que imprime un vector
+		function imprimeVector($titulo,$nombreVector,$tamano)
+		{
+			// se imprime el título
+			echo "<h2>$titulo</h2>";
+			// se imprime el vector
+			for ($i=0;$i<=$tamano;$i++) {
+				echo $nombreVector[$i]."<br>";
+			}
+		}
 
 
 		// funcion que ordena un vector con el método de burbuja
@@ -59,6 +66,9 @@ Descripción : Ordemiento con el método de Burbuja usando funciones
 			// devolver el vector ordenado
 			return $nombreVector;
 		} // fin de la función
+
+
+
 
 	?>
 
