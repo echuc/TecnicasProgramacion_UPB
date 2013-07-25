@@ -1,0 +1,13 @@
+Nombre de Campo	TipoDato	Tamaño		Observaciones
+===============	========	=======		=========================
+clasificación		C  			20
+ISBN				C 			15
+autor				C 			35		Apellido, Nombre
+título				C 			120
+datos de publicac.	C 			50		Pais, Editorial, año
+descr. física		N 			4 		No de páginas		
+tema				C 			50		Tema principal del libro
+notas				C 			60		Notas en geral
+fuente				C 			1 		Impreso / Digital
+portada				C			150		Ruta en servidor de la
+										imagen de la Portada escaneada				
